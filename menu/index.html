@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>First-Assignment</title>
+</head>
+
+<body>
+    <!-- Navbar begins-->
+    <!-- <div id="nav">
+        <p class="logo">
+            <span>e!</span>
+        </p>
+        <div class="right-text">
+            <div>
+                <p>Login</p>
+                <p class="account">Create an account</p>
+            </div>
+        </div>
+    </div> -->
+    <!-- Navbar ends -->
+
+    <!-- navbar begins -->
+    <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler ms-auto ms-sm-2" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="ms-auto">
+                    <div class="items right-text">
+                        <!-- <p class="accounts" onclick="changeMode()"><img src="https://i.ibb.co/Jp36Ljf/Bulb.jpg"
+                                alt="change mode"></p> -->
+                        <p class="accounts">Login</p>
+                        <p class="accounts"><a href="https://getbootstrap.com/docs/4.0/utilities/spacing/"
+                                target="_blank" id="menu">Menu</a></p>
+                        <p class="accounts account">Create an account</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar ends -->
+
+    <!-- Breakfast title begins-->
+    <div class="breakfast">
+        <p>Breakfast Places in Australia</p>
+    </div>
+    <!-- Breakfast tile ends-->
+
+    <div id="main">
+        <!-- Filter section begins-->
+        <section id="section1">
+            <div id="main_filter">
+                <p id="filter">Filters</p>
+                <p id="location">Select Location</p>
+                <input type="text" list="foods" name="r-food" id="food" placeholder="Search Location">
+                <datalist id="foods">
+                    <option value="Burger"></option>
+                    <option value="Meat"></option>
+                    <option value="Curry"></option>
+                    <option value="Chicken"></option>
+                    <option value="Beef"></option>
+                    <option value="Lamb Meat"></option>
+                </datalist>
+                <p id="cuisine">Cuisine</p>
+            </div>
+
+            <div id="squares">
+                <p>
+                    <input type="checkbox" id="food1" value="goat">
+                    <label for="food1">South Australia</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="food2" value="curry" checked>
+                    <label for=" food2">West Australia</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="food3" value="dal">
+                    <label for="food3">Chinese</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="food4" value="chicken">
+                    <label for="food4">Fast Food</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="food5" value="burger">
+                    <label for="food5">Korean</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="food6" value="burger">
+                    <label for="food6">Nepalese</label>
+                </p>
+            </div>
+
+            <div id="cost">
+                <div id="two">Cost for Two</div>
+                <p>
+                    <input type="checkbox" id="food7" value="kfc" class="checkbox-round">
+                    <label for="food7">Less than $20</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="food8" value="butter" class="checkbox-round">
+                    <label for="food8">$20 to $30</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="food9" value="cheese" class="checkbox-round" checked>
+                    <label for="food9">$30 to $40</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="food10" value="meal" class="checkbox-round">
+                    <label for="food10">$40 to $50</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="food11" value="dinner" class="checkbox-round">
+                    <label for="food11">$50+</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="food12" value="dinner" class="checkbox-round">
+                    <label for="food12">$55+</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="food13" value="dinner" class="checkbox-round">
+                    <label for="food13">$60+</label>
+                </p>
+            </div>
+
+            <div id="sort">
+                <div id="sorting">Sort</div>
+                <p>
+                    <input type="checkbox" id="food14" value="breakfast" class="checkbox-round" checked>
+                    <label for="food14">Price low to high</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="food15" value="fruits" class="checkbox-round">
+                    <label for="food15">Price high to low</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="food16" value="breakfast" class="checkbox-round">
+                    <label for="food16">Price low to medium</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="food17" value="fruits" class="checkbox-round">
+                    <label for="food17">Price high to medium</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="food18" value="breakfast" class="checkbox-round">
+                    <label for="food18">Price above $25</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="food19" value="fruits" class="checkbox-round">
+                    <label for="food19">Price below $25</label>
+                </p>
+            </div>
+        </section>
+        <!-- Filter section ends-->
+
+        <!-- Food section begins-->
+        <div class="section2-main" id="check">
+            <section class="section2">
+                <div class="sandwich">
+                    <div>
+                        <img src="https://i.ibb.co/CPJKkNd/photo-1459789034005-ba29c5783491-ixlib-rb-1-2-1-q-60-fm-jpg-crop-faces-edges-cs-tinysrgb-w-1200-fit.jpg"
+                            alt="Sandwich Breakfast">
+                    </div>
+                    <div class="main-para">
+                        <p class="main-para1">Homewood Mountain Resort</p>
+                        <p class="main-para2">RAW</p>
+                        <p class="main-para3">88 Acheron Road, Churchill, Victoria</p>
+                    </div>
+                </div>
+
+                <div>
+                    <hr />
+                </div>
+
+                <div class="small-para">
+                    <p>cuisines: <span>Sandwich</span></p>
+                    <p>cost for two: <span class="second-span">$15</span></p>
+                </div>
+            </section>
+
+            <section class="section2">
+                <div class="sandwich">
+                    <div>
+                        <img src="https://i.ibb.co/RctsxvL/photo-1552611052-33e04de081de-ixlib-rb-1-2.jpg"
+                            alt="Sandwich Breakfast">
+                    </div>
+                    <div class="main-para">
+                        <p class="main-para1">The Place of Heaven</p>
+                        <p class="main-para2">MEAL</p>
+                        <p class="main-para3">6 English Street, Coburg, Victoria</p>
+                    </div>
+                </div>
+
+                <div>
+                    <hr />
+                </div>
+
+                <div class="small-para">
+                    <p>cuisines: <span>Burger</span></p>
+                    <p>cost for two: <span class="second-span">$10</span></p>
+                </div>
+            </section>
+
+            <section class="section2">
+                <div class="sandwich">
+                    <div>
+                        <img src="https://i.ibb.co/PtjxYtj/photo-1518843875459-f738682238a6-ixlib-rb-1-2.jpg"
+                            alt="Sandwich Breakfast">
+                    </div>
+                    <div class="main-para">
+                        <p class="main-para1">Holy Smokin Butts BBQ</p>
+                        <p class="main-para2">BBQ</p>
+                        <p class="main-para3"> 64 William Road, Mataranka, Northern Territory</p>
+                    </div>
+                </div>
+
+                <div>
+                    <hr />
+                </div>
+
+                <div class="small-para">
+                    <p>cuisines: <span>Boxed Meals</span></p>
+                    <p>cost for two: <span class="second-span">$12.50</span></p>
+                </div>
+            </section>
+        </div>
+        <!-- Food section ends-->
+    </div>
+
+    <!-- Pagination begins-->
+    <!-- <div class="pagination">
+        <p><span>Prev</span></p>
+        <p class="one"><span>1</span></p>
+        <p><span>2</span></p>
+        <p><span>3</span></p>
+        <p><span>4</span></p>
+        <p><span>5</span></p>
+        <p><span>Next</span></p>
+    </div> -->
+
+    <nav aria-label="Page navigation example" id="pgn">
+        <ul class="pagination">
+            <li class="page-item"><a class="page-link">Previous</a></li>
+            <li class="page-item"><a class="page-link">1</a></li>
+            <li class="page-item"><a class="page-link">2</a></li>
+            <li class="page-item"><a class="page-link">3</a></li>
+            <li class="page-item"><a class="page-link">4</a></li>
+            <li class="page-item"><a class="page-link">5</a></li>
+            <li class="page-item"><a class="page-link">Next</a></li>
+        </ul>
+    </nav>
+    <!-- Pagination ends-->
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
